@@ -1,11 +1,11 @@
-# Database files
+# Database
+## Which Database to use when?
+#### MySQL vs Postgre
+- [MySQL vs PostgreSQL for Web Applications](https://stackoverflow.com/questions/27435/mysql-vs-postgresql-for-web-applications)
+- [PostgreSQL VS MySQL with respect to geolocation](https://stackoverflow.com/questions/69623116/postgresql-vs-mysql-while-dealing-with-geodjango-in-django)
+- [Difference between MySQL and PostgreSQL](https://www.geeksforgeeks.org/difference-between-mysql-and-postgresql/)
 
-## User Tables
-
-### References
-- [Database design: what fields are must for a user table in database?](https://stackoverflow.com/questions/5621469/database-design-what-fields-are-must-for-a-user-table-in-database)
-- [Storing application permissions in a database](https://stackoverflow.com/questions/10311413/storing-application-permissions-in-a-database)
-- [Django User Model](https://docs.djangoproject.com/en/4.0/ref/contrib/auth/#user-model)
-- [How to store password in DB](https://www.geeksforgeeks.org/store-password-database/)
-- [Online Bcrypt Hash Generator & Checker](https://bcrypt-generator.com/)
-- [What column type/length should I use for storing a Bcrypt hashed password in a Database?](https://stackoverflow.com/questions/5881169/what-column-type-length-should-i-use-for-storing-a-bcrypt-hashed-password-in-a-d)
+## MySQL 
+- [How to retrieve the current version of a MySQL database management system (DBMS)?](https://stackoverflow.com/questions/8987679/how-to-retrieve-the-current-version-of-a-mysql-database-management-system-dbms)
+- [How to reset password for MYSQL root and other users](https://stackoverflow.com/questions/36099028/error-1064-42000-you-have-an-error-in-your-sql-syntax-want-to-configure-a-pa)
+- [Open mysql using terminal in Mac](https://stackoverflow.com/questions/14235362/mac-install-and-open-mysql-using-terminal)
