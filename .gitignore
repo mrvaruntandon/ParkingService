@@ -50,16 +50,21 @@ build/
 .gradletasknamecache
 gradle-app.setting
 !gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
 
 ##############################
 ## IntelliJ
 ##############################
 out/
-.idea/
+.idea
 .idea_modules/
 *.iml
 *.ipr
 *.iws
+!**/src/main/**/out/
+!**/src/test/**/out/
 
 ##############################
 ## Visual Studio Code
@@ -68,6 +73,21 @@ out/
 .code-workspace
 
 ##############################
+## STS
+##############################
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+##############################
 ## OS X
 ##############################
 .DS_Store
+
+env.sh
