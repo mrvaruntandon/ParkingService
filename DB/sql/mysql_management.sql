@@ -27,3 +27,7 @@ SHOW GRANTS FOR  'someuser'@'localhost';
 
 FLUSH PRIVILEGES;
 
+-- checking contraints in mysql
+select COLUMN_NAME, CONSTRAINT_NAME, REFERENCED_COLUMN_NAME, REFERENCED_TABLE_NAME
+from information_schema.KEY_COLUMN_USAGE
+where TABLE_NAME = 'tableName';
