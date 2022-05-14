@@ -14,6 +14,9 @@ ALTER TABLE
   user_v1
 ADD
   INDEX `email_index` (`email`);
+
+-- at scale having an events table looks less sensible,
+-- but what if you need to have a record of our user's login and logout (Audit Trail)
 CREATE TABLE user_events (
     user_event_id int AUTO_INCREMENT PRIMARY KEY,
     user_id int,
