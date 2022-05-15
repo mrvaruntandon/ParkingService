@@ -48,7 +48,7 @@ public class LoggingConfig {
         Object response = proceedingJoinPoint.proceed();
         Instant endTime = Instant.now();
         Long timeElapsed = Duration.between(startTime, endTime).toMillis();
-        log.debug(String.format("Exited method %s.%s and time taken = %s ms", className, methodName, timeElapsed));
+        log.debug(String.format("Exited method %s.%s() and time taken = %s ms", className, methodName, timeElapsed));
         return response;
     }
 
