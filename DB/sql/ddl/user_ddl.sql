@@ -7,6 +7,7 @@ CREATE TABLE user_v1 (
   password varchar(255),
   is_active varchar(1),
   is_admin VARCHAR(1),
+  is_verified VARCHAR(1),
   time_created INT,
   time_updated INT
 );
