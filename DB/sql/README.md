@@ -8,3 +8,4 @@
 - [How to store password in DB](https://www.geeksforgeeks.org/store-password-database/)
 - [Online Bcrypt Hash Generator & Checker](https://bcrypt-generator.com/)
 - [What column type/length should I use for storing a Bcrypt hashed password in a Database?](https://stackoverflow.com/questions/5881169/what-column-type-length-should-i-use-for-storing-a-bcrypt-hashed-password-in-a-d)
+- [Spring Security User Schema](https://docs.spring.io/spring-security/reference/servlet/appendix/database-schema.html)

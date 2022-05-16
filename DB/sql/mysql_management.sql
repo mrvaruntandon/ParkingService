@@ -12,18 +12,23 @@ ALTER USER 'someuser'@'localhost' IDENTIFIED BY 'newpassword';
 RENAME USER 'someuser'@'localhost' TO 'somenewuser'@'localhost';
 DROP USER 'someuser'@'localhost';
 
+select CURRENT_USER();
+
 -- database related commands
 SHOW DATABASES;
 CREATE DATABASE newdb;
 CREATE DATABASE IF NOT EXISTS newdb;
 USE newdb;
 DROP DATABASE newdb;
+SELECT DATABASE();
 
 -- grant and privileges
 GRANT ALL PRIVILEGES ON * . * TO 'someuser'@'localhost';
 GRANT ALL PRIVILEGES ON newdb.* TO 'someuser'@'localhost';
 GRANT SELECT, INSERT, UPDATE ON newdb.* TO 'someuser'@'localhost';
 SHOW GRANTS FOR  'someuser'@'localhost';
+
+REVOKE SELECT, INSERT, UPDATE ON newdb.* FROM 'someuser'@'localhost';
 
 FLUSH PRIVILEGES;
 
