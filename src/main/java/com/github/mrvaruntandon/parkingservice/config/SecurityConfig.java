@@ -6,6 +6,7 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
@@ -16,6 +17,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     DataSource dataSource;
+
+    @Autowired
+    UserDetailsService userDetailsService;
 
     //authentication -- confirm the identity of the users
     @Override
@@ -32,7 +36,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         */
 
         //jdbc authentication, using the default schema = users and authorities tables
-        auth.jdbcAuthentication().dataSource(dataSource);
+        //auth.jdbcAuthentication().dataSource(dataSource);
+
+        //authentication using UserDetailsService
+        auth.userDetailsService(userDetailsService);
     }
 
     /**
